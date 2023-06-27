@@ -29,7 +29,10 @@ export async function POST(req: Request) {
         n: 1
     }
 
+
     const stream = await OpenAIStream(payload)
+
+    
 
     return new Response(stream)
 }
